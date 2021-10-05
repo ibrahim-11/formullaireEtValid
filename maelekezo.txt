@@ -1,0 +1,3 @@
+index html doit etre ouvert sous localhost pour que ca fonctionne
+
+apres les verif du formulaire on l'envoie
