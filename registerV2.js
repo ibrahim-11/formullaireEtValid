@@ -54,10 +54,15 @@ const handleRegistrationFormSubmit = (evt) => {
         const options = {
             method : 'post',
             body: formDataJsonString
+           
         }
+        // delete options.body.pwConfirm;
+        // delete options.body.tosCheck;
+        // document.forms[0].reset();
+
         fetch("/rest/register.php", options).then(resp => resp.text())
-                                    .then(json => {
-                                        console.log(json);
+                                    .then(text => {
+                                        console.log(text);
                                     });
     }
 }
